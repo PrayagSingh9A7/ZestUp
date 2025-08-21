@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# 🍽️ ZestUp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**ZestUp** is a modern, API-powered **food recipe app** built with React Native & Expo. Whether you're a beginner or a seasoned chef, ZestUp helps you explore, cook, and enjoy delicious meals with ease. Discover recipes from around the world, save your favorites, and bring flavor back to your kitchen!
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 🍲 Browse a wide variety of recipes via API
+- 🔍 Search recipes by name, ingredients, or category
+- 📝 Step-by-step cooking instructions with ingredients
+- ❤️ Save favorite recipes locally for quick access
+- 🌐 Online recipe fetching using public API
+- 💾 Data persistence using **AsyncStorage**
+- 🎨 Clean, minimal UI with rich food visuals
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Tech Stack
 
-In the output, you'll find options to open the app in a
+- **React Native**
+- **Expo**
+- **AsyncStorage** (for local data/favorites)
+- **Recipe API** (like Spoonacular / Edamam / TheMealDB)
+- **Axios / Fetch API** (for network calls)
+- **React Navigation**
+- **FlatList & ScrollView** (for smooth UI experience)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📦 Installation
 
 ```bash
-npm run reset-project
-```
+# Clone the repository
+git clone https://github.com/your-username/ZestUp.git
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Navigate into the project directory
+cd ZestUp
 
-## Learn more
+# Install dependencies
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Start the development server
+npx expo start
