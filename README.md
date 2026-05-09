@@ -32,9 +32,9 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ZestUp.git
+git clone https://github.com/PrayagSingh9A7/ZestUp.git
 
-# Navigate into the project directory
+
 cd ZestUp
 
 # Install dependencies
