@@ -11,7 +11,7 @@ export default function Home() {
       }}
       style={styles.bgImage}
     >
-      {/* Overlay for better text visibility */}
+   
       <View style={styles.overlay}>
         <View style={styles.content}>
           <Text style={styles.title}>🍲 Food Recipe App</Text>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)", // dark overlay
+    backgroundColor: "rgba(0,0,0,0.5)", 
     justifyContent: "center",
     alignItems: "center",
     padding: 20,

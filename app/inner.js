@@ -50,7 +50,7 @@ export default function HomeScreen() {
   const handleSearch = async (text) => {
     setQuery(text);
     if (text.trim().length === 0) {
-      // Reset if cleared
+   
       setLastQuery("chicken");
       loadInitial("All", "chicken");
       return;
@@ -105,7 +105,12 @@ export default function HomeScreen() {
         keyExtractor={(item) => item}
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ paddingHorizontal: 12, gap: 8 }}
+           style={{
+
+    marginBottom: 10,
+   
+  }}
+        contentContainerStyle={{ paddingHorizontal: 12, gap: 8 ,marginBottom: 20}}
         renderItem={({ item }) => (
           <Text
             onPress={() => handleCategoryPress(item)}
@@ -122,9 +127,11 @@ export default function HomeScreen() {
           <Text style={{ color: "#666", marginTop: 8 }}>Loading recipes…</Text>
         </View>
       ) : (
-        <FlatList
+  
+          <FlatList
           data={meals}
           keyExtractor={(item) => item.idMeal}
+        
           contentContainerStyle={{ padding: 12, paddingBottom: 24 }}
           refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
           renderItem={({ item }) => (
@@ -141,6 +148,7 @@ export default function HomeScreen() {
           )}
           ListEmptyComponent={<Text style={styles.empty}>No recipes found.</Text>}
         />
+   
       )}
     </View>
   );
