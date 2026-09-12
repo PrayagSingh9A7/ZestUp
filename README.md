@@ -1,44 +1,152 @@
 # 🍽️ ZestUp
 
-**ZestUp** is a modern, API-powered **food recipe app** built with React Native & Expo. Whether you're a beginner or a seasoned chef, ZestUp helps you explore, cook, and enjoy delicious meals with ease. Discover recipes from around the world, save your favorites, and bring flavor back to your kitchen!
+### Recipe Discovery Mobile App
+
+ZestUp is a modern **React Native & Expo recipe discovery app** that helps users explore recipes, search for meals, view step-by-step cooking instructions, and save their favorite recipes for quick access.
 
 ---
 
 ## ✨ Features
 
-- 🍲 Browse a wide variety of recipes via API
-- 🔍 Search recipes by name, ingredients, or category
-- 📝 Step-by-step cooking instructions with ingredients
-- ❤️ Save favorite recipes locally for quick access
-- 🌐 Online recipe fetching using public API
-- 💾 Data persistence using **AsyncStorage**
-- 🎨 Clean, minimal UI with rich food visuals
+* 🍲 Browse recipes through a public recipe API
+* 🔍 Search recipes by name, ingredients, or category
+* 📝 View ingredients and step-by-step cooking instructions
+* ❤️ Save favorite recipes locally
+* 💾 Persistent favorites using AsyncStorage
+* 🌐 Fetch recipe data dynamically from an external API
+* 📱 Responsive mobile-first interface
+* 🎨 Clean and minimal food-focused UI
 
 ---
 
-## 🚀 Tech Stack
+## 📱 App Experience
 
-- **React Native**
-- **Expo**
-- **AsyncStorage** (for local data/favorites)
-- **Recipe API** (like Spoonacular / Edamam / TheMealDB)
-- **Axios / Fetch API** (for network calls)
-- **React Navigation**
-- **FlatList & ScrollView** (for smooth UI experience)
+```text
+                    ZestUp
+                      │
+          ┌───────────┴───────────┐
+          │                       │
+       Discover                 Search
+          │                       │
+          └───────────┬───────────┘
+                      ▼
+                 Recipe List
+                      │
+                      ▼
+               Recipe Details
+                 │          │
+                 ▼          ▼
+          Ingredients    Instructions
+                             
+                      │
+                      ▼
+                 ❤️ Favorites
+                      │
+                      ▼
+                 AsyncStorage
+```
 
 ---
 
-## 📦 Installation
+## 🛠️ Tech Stack
+
+### Mobile
+
+* React Native
+* Expo
+* TypeScript / JavaScript
+* React Navigation
+
+### Data & Storage
+
+* Public Recipe API
+* Axios / Fetch API
+* AsyncStorage
+
+### UI
+
+* FlatList
+* ScrollView
+* React Native components
+
+---
+
+## 🏗️ Project Structure
+
+```text
+ZestUp/
+│
+├── app/
+├── components/
+├── constants/
+├── hooks/
+├── utils/
+├── assets/
+├── scripts/
+├── app.json
+├── eas.json
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/PrayagSingh9A7/ZestUp.git
-
-# Navigate into the project directory
 cd ZestUp
+```
 
-# Install dependencies
+### 2. Install dependencies
+
+```bash
 npm install
+```
 
-# Start the development server
+### 3. Start the Expo development server
+
+```bash
 npx expo start
+```
+
+Then open the application using an available **Android emulator, iOS simulator, or Expo-compatible mobile device**.
+
+---
+
+## 🔑 What This Project Demonstrates
+
+* React Native mobile application development
+* Expo-based development workflow
+* External REST API integration
+* Asynchronous data fetching
+* Local data persistence
+* Search and filtering
+* Reusable mobile components
+* Navigation between application screens
+* Mobile-first UI development
+
+---
+
+## 📌 Future Improvements
+
+* Personalized recipe recommendations
+* Meal planning
+* Shopping list generation
+* Nutritional information
+* Recipe sharing
+* Offline recipe caching
+
+---
+
+## 👨‍💻 Author
+
+**Prayag Singh**
+
+Full Stack Developer
+
+---
+
+### ⭐ Built with React Native & Expo
